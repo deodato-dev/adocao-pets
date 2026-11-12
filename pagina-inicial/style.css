@@ -1,0 +1,14 @@
+:root{
+    --fonte-mao: 'Caveat';
+    --fonte-maquina: 'Quicksand';
+}
+
+.header{
+    font-family: var(--fonte-maquina);
+}
+
+.logo{
+    font-family: var(--fonte-mao);
+    font-size: 2rem;
+    color: #38312b;
+}
