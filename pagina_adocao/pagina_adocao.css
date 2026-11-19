@@ -1,3 +1,30 @@
+
+body {
+  background-color: #F3EFE7;
+  color: #38312B;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-nav .nav-link {
+  color: #38312B !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #C56D53 !important; 
+}
+
+.divisor-navbar {
+  width: 4px;
+  height: 24px;
+  background-color: rgba(56, 49, 43, 0.2);
+  border-radius: 99px;
+  transform: rotate(12deg);
+}
+
 .animais .row {
     margin-left: -100px;
     margin-right: -100px
@@ -5,4 +32,20 @@
 
 .animais .anm {
     margin-bottom: 35px;
+}
+
+.navbar-bloco {
+  background-color: #E8E1D5;
+  border: 2px solid #38312B;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  box-shadow: 4px 4px 0px #38312B;
+  transform: rotate(-0.8deg);
+}
+
+.btn-criar {
+  background-color: #7C8C61;
+  color: #F3EFE7;
+  border: 2px solid #38312B;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  box-shadow: 3px 3px 0px #38312B;
 }
