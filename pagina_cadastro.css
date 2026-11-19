@@ -1,0 +1,17 @@
+#fundo-pagina{
+    background-color: #f1ede5;
+}
+
+.formulario {
+ display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dados{
+    margin-bottom: 15px;
+}
+
+.rodape{
+    background-color: #38312b;
+}
