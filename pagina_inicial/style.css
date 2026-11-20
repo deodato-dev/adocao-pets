@@ -1,6 +1,27 @@
 :root{
     --fonte-mao: 'Caveat';
     --fonte-maquina: 'Quicksand';
+    --cor-normal: #38312b;
+    --cor-destaque: #c56d53;
+}
+
+::selection{
+    color: var(--cor-normal);
+    background: #d8ab4c;
+}
+
+body {
+    background-color: #f1ede5;
+}
+
+
+
+p{
+    font-family: var(--fonte-maquina);
+}
+
+.destaque{
+    color: var(--cor-destaque)
 }
 
 .header{
