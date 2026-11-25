@@ -14,10 +14,14 @@ body {
     background-color: #f1ede5;
 }
 
-
+h1{
+    font-family: var(--fonte-mao);
+    font-size: 5rem;
+}
 
 p{
     font-family: var(--fonte-maquina);
+    font-size: 1.2rem;
 }
 
 .destaque{
@@ -32,4 +36,36 @@ p{
     font-family: var(--fonte-mao);
     font-size: 2rem;
     color: #38312b;
+}
+
+.hero{
+    padding-top: 75px;
+}
+
+.navbar-nav .nav-link {
+  color: #38312B !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #C56D53 !important; 
+}
+
+.divisor-navbar {
+  width: 4px;
+  height: 24px;
+  background-color: rgba(56, 49, 43, 0.2);
+  border-radius: 99px;
+  transform: rotate(12deg);
+}
+
+.navbar-bloco {
+  background-color: #E8E1D5;
+  border: 2px solid #38312B;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  box-shadow: 4px 4px 0px #38312B;
+  transform: rotate(-0.8deg);
 }
