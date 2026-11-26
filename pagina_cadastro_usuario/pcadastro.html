@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario de cadastro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="pagina_cadastro.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Quicksand:wght@400..700&display=swap" rel="stylesheet">
+    <script src="pagina_cadstro.js" defer></script>
+</head>
+
+
+<body id="fundo-pagina">
+
+<header>
+        <nav class="navbar navbar-expand-md sticky-top p-3">
+            <div class="container navbar-bloco px-4 py-2">
+                <div class="navbar-header">
+                    <a class="navbar-brand d-flex align-items-center fw-bold" href="#inicio">
+                        <span style="font-family: 'Caveat', cursive; font-size: 2rem;">AdoteUmPet</span>
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="nav navbar-nav ms-auto align-items-md-center gap-3">
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="pagina de inicio">Início</a>
+                        </li>
+
+                        <li class="nav-item"> 
+                            <a class="nav-link fw-bold" href="pagina_adocao.html">Adoção</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="pagina animais perdidos">Perdidos</a>
+                        </li>
+
+                        <li class="nav-item d-none d-md-block text-muted">
+                            <div class="divisor-navbar"></div>    
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="pagina de login">Entrar</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="pagina de cadastro"class="btn btn-criar fw-bold px-3 py-2" role="button">Criar conta</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    
+    <div class="formulario_fora">
+        <div class="cabecalho">
+            <h2>Realize o seu cadastro com seus dados atualizados</h2>
+        </div>   
+        <form   id="meuForm" class="formulario_dentro" action="Dados Cadastrais">
+            <!--O usuario ira preencher as informações de forma obrigatoria-->
+            <div class="dados">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome"  name="nome completo" placeholder="Digite seu nome" required>
+                <span id="erroNome"  ></span>
+            </div>
+
+            <div class="dados">   
+                <label for="telefone">telefone</label>
+                <input type="number"    id="telefone"  maxlength="11" name="telefone" placeholder="(83) 99876-6544" required>
+                <span id="erroTelfone"></span>
+            </div> 
+            
+            <div class="dados">
+                <label for="Endereço de email"> Endereço de email</label>
+                <input type="text"   id="email"  name="Endereço de email" placeholder="Digite seu email " required>
+                <span id="erroEmail"></span>
+            </div>
+            
+            <div class="dados">
+              <label for="opcao"> Escolha  :</label>
+              <select id="opcao" name="opcao">
+                <option value="" disabled selected>Selecione...</option>
+                <option value="">Adotar um pet </option>
+                <option value="">Doar um pet  </option>
+                <option value="">Animais perdidos</option>                  
+              </select>
+            </div>
+            <!--Aqui o usuario ira criar sua senha-->
+            <div class="dados">
+            <label for="senha">Crie um senha</label>
+            <input type="number"  id="senha" class="" name="senha" placeholder="40028922" required>
+            <span id="erroSenha"></span>
+            </div>
+
+            <!--Aqui sera para o usuario confirmar a senha-->
+            <Div class="dados">
+               <label for="senha">Confirme sua senha</label>
+               <input type="number" id="confirmarsenha" class="" name="confirmarsenha" placeholder="40028922" required>
+               <span id="erroConfirmarsenha"   ></span>
+            </Div>
+        <div class="submit_botao">
+            <!--botão-->
+            <button type="submit" class="btn btn-criar fw-bold">confirmar dados </button>
+        </div>
+    </form>
+      </div>
+       
+    <footer class="text-center">
+        <img src="" alt="">
+
+        
+
+        <p>Feito com as próprias mãos (e muitas patinhas). Todos os direitos reservados. &copy </p>
+    </footer>       
+    
+</body>
+</html
