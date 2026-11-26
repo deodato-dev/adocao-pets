@@ -3,14 +3,17 @@
     --fonte-maquina: 'Quicksand';
     --cor-normal: #38312b;
     --cor-destaque: #c56d53;
+    --cor-mostarda: #d8ab4c;
+    --borda-torta: 255px 15px 225px 15px/15px 225px 15px 255px;
+    --sombra: 4px 4px 0px;
 }
 
 ::selection{
     color: var(--cor-normal);
-    background: #d8ab4c;
+    background: var(--cor-mostarda)
 }
 
-body {
+body{
     background-color: #f1ede5;
 }
 
@@ -18,10 +21,25 @@ body {
 
 p{
     font-family: var(--fonte-maquina);
+    font-size: 1.5rem;
 }
 
 .destaque{
-    color: var(--cor-destaque)
+    color: var(--cor-destaque);
+    position: relative;
+}
+/*pseudo-elemento porque não teria como estilizar tão bem usando text-decoration*/
+.destaque::after{
+    content: "";
+    position: absolute;
+    background-color: var(--cor-mostarda);
+    width: 104%;
+    height: 13px;
+    left: -1%;
+    bottom: 5%;
+    opacity: 60%;
+    transform: rotate(-1deg);
+    border-radius: 0px 100px 0px 100px;
 }
 
 .header{
@@ -32,4 +50,86 @@ p{
     font-family: var(--fonte-mao);
     font-size: 2rem;
     color: #38312b;
+}
+
+.hero{
+    padding-top: 75px;
+}
+
+.bts-hero{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.btn-adocao{
+    border: 2px solid var(--cor-normal) !important;
+    background-color: var(--cor-destaque) !important;
+    color: #f1ede5 !important;
+    box-shadow: var(--sombra) var(--cor-normal);
+    border-width: 2px 6px 6px 2px;
+    border-radius: var(--borda-torta);
+    font-family: var(--fonte-maquina);
+    font-weight: 650;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    transition: all 0.4s;
+}
+
+.btn-adocao:hover{
+    transform: scale(1.067);
+    translate: 7px;
+}
+
+.btn-perdidos{
+    border: 2px dashed !important;
+    font-family: var(--fonte-maquina);
+    font-size: 1.3rem;
+    font-weight: 650;
+    padding: 1rem 2rem;
+    align-items: inline-flex;
+    transform: rotate(2deg);
+    transition: all 0.4s;
+}
+
+.btn-perdidos:hover{
+    transform: rotate(0deg);
+    background-color: #e8e1d5;
+}
+
+.polaroid{
+    box-shadow: var(--sombra) var(--cor-normal);
+}
+
+.navbar-nav .nav-link {
+  color: var(--cor-normal) !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color:  var(--cor-destaque) !important; 
+}
+
+.divisor-navbar {
+  width: 4px;
+  height: 24px;
+  background-color: rgba(56, 49, 43, 0.2);
+  border-radius: 99px;
+  transform: rotate(12deg);
+}
+
+.navbar-bloco {
+  background-color: #E8E1D5;
+  border: 2px solid #38312B;
+  border-radius: var(--borda-torta);
+  box-shadow: var(--sombra) var(--cor-normal);
+  transform: rotate(-0.8deg);
+  transition: all 0.4s;
+}
+
+.navbar-bloco:hover{
+    transform: rotate(0deg);
 }
