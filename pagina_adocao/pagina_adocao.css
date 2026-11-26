@@ -1,0 +1,150 @@
+
+body {
+  background-color: #F3EFE7;
+  color: #38312B;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-nav .nav-link {
+  color: #38312B !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #C56D53 !important; 
+}
+
+.divisor-navbar {
+  width: 4px;
+  height: 24px;
+  background-color: rgba(56, 49, 43, 0.2);
+  border-radius: 99px;
+  transform: rotate(12deg);
+}
+
+.animais .row {
+    margin-left: -100px;
+    margin-right: -100px
+}
+
+.animais .anm {
+    margin-bottom: 35px;
+}
+
+.navbar-bloco {
+  margin-top: 20px;
+  background-color: #E8E1D5;
+  border: 2px solid #38312B;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  box-shadow: 4px 4px 0px #38312B;
+  transform: rotate(-0.8deg);
+  transition: all ease 0.25s;
+  margin-bottom: 20px;
+}
+
+.navbar-bloco:hover {
+  rotate: 0.8deg;
+}
+ 
+.btn-criar {
+  background-color: #7C8C61;
+  color: #F3EFE7;
+  border: 2px solid #38312B;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  box-shadow: 3px 3px 0px #38312B;
+}
+
+.titulo-hero {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  padding-top: 15px;
+  font-family: 'Caveat';
+  font-size: 3rem;
+}
+
+.titulo-hero::before {
+content: "";
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 120px;
+height: 20px;
+background-repeat: no-repeat;
+background-size: contain;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 20'%3E%3Cpath d='M 2 10 Q 32 0, 60 10 T 118 10' fill='none' stroke='%23d59f8e' stroke-width='3.5'/%3E%3C/svg%3E");
+}
+
+.subtitulo-hero {
+ font-size: large;
+ color: #615c58; 
+ margin-bottom: 20px;
+}
+
+.filtros-pets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.btn-filtro {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #EAE3D8;
+  color: #352F2B;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 0.7rem 2.2rem;
+  border: 1.5px solid #352F2B;
+  /* Cria a leve curvatura orgânica nas bordas */
+  border-radius: 255px 12px 225px 12px / 12px 225px 12px 255px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Segunda linha fina para dar o efeito de traço desenhado à mão */
+.btn-filtro::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border: 1.5px solid #352F2B;
+  border-radius: 15px 240px 15px 240px / 240px 15px 240px 15px;
+  transform: rotate(0.8deg);
+  pointer-events: none;
+}
+
+/* Inclinação sutil e diferente para cada botão */
+.btn-filtro:nth-child(1) { transform: rotate(-2deg); }
+.btn-filtro:nth-child(2) { transform: rotate(0.6deg); }
+.btn-filtro:nth-child(3) { transform: rotate(-1.5deg); }
+.btn-filtro:nth-child(4) { transform: rotate(1.2deg); }
+
+/* Efeito ao passar o mouse */
+.btn-filtro:hover {
+  background-color: #DFD6C7;
+  transform: rotate(0deg) translateY(-2px);
+}
+
+/* Botão selecionado (igual ao "Todos" da referência) */
+.btn-filtro.active {
+  background-color: #352F2B;
+  color: #FAF7F2;
+  border-color: #1E1A18;
+}
+
+/* Sombra sólida deslocada atrás do botão ativo */
+.btn-filtro.active::after {
+  background-color: #1E1A18;
+  border-color: #1E1A18;
+  inset: 3px -3px -3px 3px;
+  transform: rotate(1.5deg);
+  z-index: -1;
+}
