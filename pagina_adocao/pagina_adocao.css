@@ -41,6 +41,7 @@ body {
 
 .navbar-bloco {
   margin-top: 20px;
+  margin-top: 20px;
   background-color: #E8E1D5;
   border: 2px solid #38312B;
   border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
@@ -52,7 +53,14 @@ body {
 
 .navbar-bloco:hover {
   rotate: 0.8deg;
+  transition: all ease 0.25s;
+  margin-bottom: 20px;
 }
+
+.navbar-bloco:hover {
+  rotate: 0.8deg;
+}
+ 
  
 .btn-criar {
   background-color: #7C8C61;
