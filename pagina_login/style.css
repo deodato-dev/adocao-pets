@@ -1,0 +1,300 @@
+
+/*
+Paleta de Cores:
+
+bege: #f1ede5
+salmão: #c56d53
+amarelo: #d8ab4c
+verde: #7c8c61
+marrom: #38312b
+*/
+
+
+/*Header*/
+
+.header{
+    position: sticky;
+    top: 16px;
+    z-index: 100;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1ede5;
+    border: 2px solid #38312b;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    padding: 14px 28px;
+    box-shadow: 5px 6px #38312b;
+    transform: rotate(-0.8deg);
+    transition: transform 0.25s ease, border-radius 0.25s ease;
+}
+
+.header_reto {
+    transform: rotate(0deg);
+    border-radius: 12px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color:#7c8c61;
+}
+
+.logo_circular{
+    width: 40px;
+    height: 40px;
+    background-color: #f1ede5;
+    border: 2px solid #f1ede5;
+    border-radius: 48% 52% 45% 55% / 52% 46% 54% 48%¨;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.logo_img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.logo_texto{
+    font-family: "Caveat", cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0,5px;
+    line-height: 1;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.menulista{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.menulink{
+    text-decoration: none;
+    color: #38312b;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.menulink:hover{
+    color: #c56d53;
+    transform: translateY(-1);
+}
+
+.menubarra{
+    color:#7c8c61;
+    font-size: 1.4rem;
+    font-weight: 600;
+    user-select: none;
+}
+
+.botaoentrar{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #7c8c61;
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 2px solid #38312b;
+    border-radius: 18px 220px 18px 220px / 220px 18px 220px 18px;
+    box-shadow: 3px 4px 0px #38312b;
+    transition: transform 0.15s ease, box shadow 0.15 ease, background-color 0.15s ease;
+}
+
+.botaoentrar:hover{
+    background-color: #7c8c61 ;
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 5px 0px #38312b;
+}
+
+.botaoentrar:active{
+    transform: translate(2px, 2px);
+    box-shadow: 1px 2px 0px #38312b;
+}
+
+
+/*Área Central e Formulário de Login*/
+
+
+.body{
+    background-color: #f1ede5;
+    font-family: "Quicksand", sans-serif;
+    color: #7c8c61;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: clip;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_card{
+    position: relative;
+    width: 100%;
+    max-width: 330px;
+    background-color: #f1ede5;
+    border: 1.8px solid #38312b;
+    border-radius: 6px 8px 5px 7px;
+    padding: 24px 24px 20px;
+    box-shadow: 4px 5px 0px #38312b;
+    margin: 30px auto;
+}
+
+.login_titulo{
+    font-family: "Caveat", cursive;
+    font-size: 2.6rem;
+    color: #7c8c61;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 6px;
+}
+
+.login_subtitulo{
+    text-align: center;
+    color: #7c8c61;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 26px;
+}
+
+.fields{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label{
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #38312b;
+}
+
+.campo input{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #38312b;
+    background-color: #f1ede5;
+    padding: 9px 11px;
+    border: 2px solid #38312b;
+    border-radius: 12px 8px 14px 10px / 10px 14px 8px 12px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2 ease, backgorund-color 0.2 ease;
+}
+
+.campo input::placeholder{
+    color: #8b8278;
+    font-weight: 500;
+}
+
+.campo input:focus{
+    background-color: #f1ede5;
+    border-color: #7c8c61;
+    box-shadow: 3px 3px 0px #d8ab4c;
+}
+
+.botao_form{
+    margin-top: 8px;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #f1ede5; 
+    background-color: #c56d53;
+    padding: 10px 14px;
+    border: 2px solid #38312b;
+    border-radius: 18px 220px 18px 220px / 220px 18px 220px 18px;
+    box-shadow: 4px 5px 0px #38312b;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15 ease, background-color 0.15s ease;
+}
+
+.botao-form:hover {
+    background-color: #7c8c61;
+    transform: translate (-1px, -1px);
+    box-shadow: 5px 6px 0px #38312b;
+}
+
+.botao-form:active {
+    transform: translate (2px, 2px);
+    box-shadow: 1px 2px 0px #38312b;
+}
+
+.login_cadastro{
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 2px dashed #d8ab4c;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color:#38312b;
+    line-height: 1.6;
+}
+
+.login_cadastro_link{
+    color: #38312b;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.login_cadastro_link:hover {
+    color:#7c8c61;
+}
+
+
+/*Footer*/
+
+
+.footer{
+    width: 100%;
+    background:#38312b;
+    color:#f1ede5;
+    text-align: center;
+    padding: 50px 20px;;
+    border-top: 2px solid #d8ab4c;
+    align-items: center;
+    
+}    
+
+.logofooter{
+    margin: auto;
+    width: 100px;
+}
+
+.footer_texto{
+    align-items: center;
+    gap: 6px;
+    background-color: #38312b;
+    color: #f1ede5;
+    font-family: "Caveat", cursive;
+    font-size: 1.35rem;
+    font-weight: 700;
+}

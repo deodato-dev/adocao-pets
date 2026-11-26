@@ -1,0 +1,213 @@
+body {
+  background-color: #f1ede5;
+  color: #38312b;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.logo-texto {
+  font-family: 'Caveat';
+  font-size: 2rem;
+}
+
+.navbar-nav .nav-link {
+  color: #38312B !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #C56D53 !important; 
+}
+
+.divisor-navbar {
+  width: 4px;
+  height: 24px;
+  background-color: rgba(56, 49, 43, 0.2);
+  border-radius: 99px;
+  transform: rotate(12deg);
+}
+
+.navbar-bloco:hover {
+  rotate: 0.8deg;
+  transition: all ease 0.25s;
+  margin-bottom: 20px;
+}
+
+.btn-criar {
+  background-color: #7c8c61;
+  color: white;
+  border: 2px solid #38312b;
+  border-radius: 5px;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.topo-pagina {
+  margin-top: 40px;
+  background-color: #e8e4db;
+  padding: 40px;
+  text-align: center;
+}
+
+.etiqueta-amarela {
+  background-color: #d8ab4c;
+  padding: 5px 10px;
+  border: 2px solid #38312b;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.botao-amarelo {
+  background-color: #d8ab4c;
+  color: #38312b;
+  border: 2px solid #38312b;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.secao-busca {
+  padding: 30px;
+  text-align: center;
+}
+
+.campo-busca input {
+  padding: 10px;
+  width: 80%;
+  border: 2px solid #38312b;
+  border-radius: 5px;
+}
+
+.secao-cartazes {
+  padding: 20px;
+  text-align: center;
+}
+
+.cartaz {
+  background-color: #f1ede5;
+  border: 2px solid #38312b;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.cartaz img {
+  width: 100%;
+  max-height: 250px;
+  border: 2px solid #38312b;
+  border-radius: 5px;
+}
+
+.titulo-cartaz {
+  color: #c56d53;
+  font-size: 30px;
+}
+
+.botao-cartaz {
+  display: block;
+  background-color: #f1ede5;
+  color: #38312b;
+  text-decoration: none;
+  border: 2px dashed #38312b;
+  padding: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #38312b;
+  color: #f1ede5;
+  padding: 15px;
+}
+
+.navbar-bloco {
+  background-color: #E8E1D5;
+  border: 2px solid #38312B;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  box-shadow: 4px 4px 0px #38312B;
+  transform: rotate(-0.8deg);
+}
+
+.btn-criar {
+  background-color: #7C8C61;
+  color: #F3EFE7;
+  border: 2px solid #38312B;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  box-shadow: 3px 3px 0px #38312B;
+}
+
+.secao-formulario {
+  background-color: #7c8c61;
+  padding: 40px;
+  border-top: 2px solid #38312b;
+}
+
+.secao-formulario h2 {
+  color: white;
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+}
+
+.formulario-contato {
+  background-color: #f1ede5;
+  border: 2px solid #38312b;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.formulario-contato label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.formulario-contato input, .formulario-contato textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #38312b;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.formulario-contato button {
+  width: 100%;
+}
+
+.footer-artesanal {
+  background-color: #38312B;
+  color: #E8E1D5;
+  border-top: 4px solid #D8AB4C;
+}
+
+.selo-footer {
+  background-color: #F3EFE7;
+  color: #38312B;
+  border: 2px solid #38312B;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  transform: rotate(1deg);
+}
+
+.social-footer {
+  color: #E8E1D5;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-footer:hover {
+  color: #D8AB4C;
+  transform: translateY(-2px);
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}

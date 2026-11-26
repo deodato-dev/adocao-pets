@@ -1,0 +1,227 @@
+:root{
+    --fonte-mao: 'Caveat';
+    --fonte-maquina: 'Quicksand';
+    --cor-normal: #38312b;
+    --cor-destaque: #c56d53;
+    --cor-mostarda: #d8ab4c;
+    --borda-torta: 255px 15px 225px 15px/15px 225px 15px 255px;
+    --sombra: 4px 4px 0px;
+}
+
+::selection{
+    color: var(--cor-normal);
+    background: var(--cor-mostarda)
+}
+
+body{
+    background-color: #f1ede5;
+}
+
+h1{
+    font-family: var(--fonte-mao);
+    font-size: 5rem;
+}
+
+.maquina{
+    font-family: var(--fonte-maquina);
+}
+
+.descricao{
+    font-family: var(--fonte-maquina);
+    font-size: 1.5rem;
+}
+
+.destaque{
+    color: var(--cor-destaque);
+    position: relative;
+}
+/*pseudo-elemento porque não teria como estilizar tão bem usando text-decoration*/
+.destaque::after{
+    content: "";
+    position: absolute;
+    background-color: var(--cor-mostarda);
+    width: 104%;
+    height: 13px;
+    left: -1%;
+    bottom: 5%;
+    opacity: 60%;
+    transform: rotate(-1deg);
+    border-radius: 0px 100px 0px 100px;
+}
+
+.logo{
+    font-family: var(--fonte-mao);
+    font-size: 2rem;
+    color: #38312b;
+}
+
+.hero{
+    padding-top: 75px;
+}
+
+.etiqueta-hero{
+    font-family: var(--fonte-maquina);
+    font-weight: 650;
+    font-size: 0.9rem;
+    background-color: var(--cor-mostarda);
+    border: 1px solid var(--cor-normal);
+    border-width: 2px 6px 6px 2px;
+    border-radius: var(--borda-torta);
+    padding: 0.4rem 0.8rem;
+    display: inline-block;
+    transform: rotate(-2deg);
+    margin-bottom: 15px;
+}
+
+.bts-hero{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.btn-adocao{
+    border: 2px solid var(--cor-normal) !important;
+    background-color: var(--cor-destaque) !important;
+    color: #f1ede5 !important;
+    box-shadow: var(--sombra) var(--cor-normal);
+    border-width: 2px;
+    border-radius: var(--borda-torta);
+    font-family: var(--fonte-maquina);
+    font-weight: 650;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    transition: all 0.4s;
+}
+
+.btn-adocao:hover{
+    transform: scale(1.067);
+    translate: 7px;
+}
+
+.btn-perdidos{
+    border: 2px dashed !important;
+    font-family: var(--fonte-maquina);
+    font-size: 1.3rem;
+    font-weight: 650;
+    padding: 1rem 2rem;
+    transform: rotate(2deg);
+    transition: all 0.4s;
+}
+
+.btn-perdidos:hover{
+    transform: rotate(0deg);
+    background-color: #e8e1d5;
+}
+
+.polaroid{
+    box-shadow: var(--sombra) var(--cor-normal);
+    background-color: #f1ede5;
+    border: 2px solid;
+    border-radius: var(--borda-torta);
+    padding: 20px 40px 80px;
+    max-width: 85%;
+    transform: rotate(4deg);
+    transition: all 0.7s;
+    margin-left: 40px;
+    position: relative;
+}
+
+.polaroidCaption{
+    margin-top: 20px;
+    font-family: var(--fonte-mao);
+    font-size: 2rem;
+}
+
+.polaroidImage{
+    border: 3px solid;
+    border-radius: var(--borda-torta);
+    transform: rotate(-2deg);
+}
+
+.polaroid:hover{
+    transform: rotate(0deg);
+}
+
+.polaroid::after{
+    content: "";
+    position: absolute;
+    width: 91px;
+    height: 23px;
+    background-color: rgba(233, 226, 215);
+    left: 50%;
+    top: -3%;
+    transform: translateX(-50%) rotate(-8deg);
+    border-radius: var(--borda-torta);
+    opacity: 97%;
+}
+
+.logo-texto {
+  font-family: var(--fonte-mao);
+  font-size: 2rem;
+}
+
+.navbar-nav .nav-link {
+  color: var(--cor-normal) !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color:  var(--cor-destaque) !important; 
+}
+
+.divisor-navbar {
+  width: 4px;
+  height: 24px;
+  background-color: rgba(56, 49, 43, 0.2);
+  border-radius: 99px;
+  transform: rotate(12deg);
+}
+
+.navbar-bloco {
+  margin-top: 20px;
+  margin-top: 20px;
+  background-color: #E8E1D5;
+  border: 2px solid var(--cor-normal);
+  border-radius: var(--borda-torta);
+  box-shadow: var(--sombra) var(--cor-normal);
+  transform: rotate(-0.8deg);
+  transition: all ease 0.25s;
+  margin-bottom: 20px;
+}
+
+.navbar-bloco:hover {
+  rotate: 0.8deg;
+  transition: all ease 0.25s;
+  margin-bottom: 20px;
+}
+
+.btn-criar {
+  background-color: #7C8C61 !important;
+  color: #F3EFE7;
+  border: 2px solid var(--cor-normal) !important;
+  border-radius: var(--borda-torta);
+  box-shadow: var(--sombra) var(--cor-normal);
+}
+
+.footer-artesanal {
+  background-color: var(--cor-normal);
+  color: #E8E1D5;
+  border-top: 4px solid #D8AB4C;
+}
+
+.selo-footer {
+  background-color: #F3EFE7;
+  color: #38312B;
+  border: 2px solid var(--cor-normal);
+  border-radius: var(--borda-torta);
+  transform: rotate(1deg);
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}

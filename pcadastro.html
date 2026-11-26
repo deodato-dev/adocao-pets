@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario de cadastro</title>
+<link rel="stylesheet" href="pagina_cadastro.css">
+
+</head>
+
+<body id="fundo-pagina">
+    <h1>Formulario de cadastro </h1>
+    <h2>Reaize o seu cadastro com seus dados atualizados</h2>
+    <div class="formulario">
+        <form action="Dados Cadastrais">
+            <!--O usuario ira preencher as informações de forma obrigatoria-->
+            <div class="dados">
+            <label for="nome">Nome completo</label>
+            <input type="text"  name="nome completo" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="dados">   
+            <label for="telefone">telefone</label>
+            <input type="tel"      name="telefone" placeholder="(83) 99876-6544" required>
+            </div> 
+            
+            <div class="dados">
+            <label for="Endereço de email"> Endereço de email</label>
+            <input type="text"  name="Endereço de email" placeholder="Digite seu email " required>
+            </div>
+            
+            <div class="dados">
+            <label for="opcao"> Escolha  :</label>
+              <select id="opcao" name="opcao">
+                <option value="" disabled selected>Selecione...</option>
+                <option value=""> Adotar um pet </option>
+                <option value="">Doer um pet  </option>
+                <option value="">Animais perdidos</option>                  
+             </select>
+            </div>
+            <!--Aqui o usuario ira criar sua senha-->
+            <div class="dados">
+            <label for="senha">Crie um senha</label>
+            <input type="number" class="" name="senha" placeholder="40028922" required>
+            </div>
+
+            <!--Aqui sera para o usuario confirmar a senha-->
+            <Div class="dados">
+               <label for="senha">Confirme sua senha</label>
+               <input type="number" class="" name="senha" placeholder="40028922" required>
+            </Div>
+
+            <!--botão-->
+            <button type="submit">confirmar dados </button>
+    </form>
+      </div>
+       <div >
+      <footer class="rodape"> </footer>
+       </div>
+    
+</body>
+</html
