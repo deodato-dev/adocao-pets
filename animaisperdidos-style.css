@@ -57,6 +57,7 @@ body {
   font-weight: bold;
   display: inline-block;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .secao-busca {
@@ -87,7 +88,7 @@ body {
 
 .cartaz img {
   width: 100%;
-  height: 200px;
+  max-height: 250px;
   border: 2px solid #38312b;
   border-radius: 5px;
 }
@@ -113,6 +114,7 @@ footer {
   color: #f1ede5;
   padding: 15px;
 }
+
 .navbar-bloco {
   background-color: #E8E1D5;
   border: 2px solid #38312B;
@@ -127,4 +129,43 @@ footer {
   border: 2px solid #38312B;
   border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
   box-shadow: 3px 3px 0px #38312B;
+}
+
+.secao-formulario {
+  background-color: #7c8c61;
+  padding: 40px;
+  border-top: 2px solid #38312b;
+}
+
+.secao-formulario h2 {
+  color: white;
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+}
+
+.formulario-contato {
+  background-color: #f1ede5;
+  border: 2px solid #38312b;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.formulario-contato label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.formulario-contato input, .formulario-contato textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #38312b;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.formulario-contato button {
+  width: 100%;
 }

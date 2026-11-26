@@ -5,14 +5,13 @@
   <title>Animais Perdidos | AdoteUmPet</title>
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="animaisperdidos-style.css">
 </head>
 <body>
 
-  <header>
+  <header id="inicio">
     <nav class="navbar navbar-expand-md sticky-top p-3">
       <div class="container navbar-bloco px-4 py-2">
         
@@ -30,13 +29,13 @@
           <ul class="nav navbar-nav ms-auto align-items-md-center gap-3">
             
             <li class="nav-item">
-              <a class="nav-link fw-bold" href="pagina de inicio">Início</a>
+              <a class="nav-link fw-bold" href="#inicio">Início</a>
             </li>
             <li class="nav-item"> 
               <a class="nav-link fw-bold" href="pagina_adocao.html">Adoção</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold" href="pagina animais perdidos">Perdidos</a>
+              <a class="nav-link fw-bold" href="#cartazes">Perdidos</a>
             </li>
             
             <li class="nav-item d-none d-md-block text-muted">
@@ -63,7 +62,7 @@
         <span class="etiqueta-amarela">Mural de Adoção</span>
         <h1>Cartazes de Procurados</h1>
         <p>Você viu algum desses pets?</p>
-        <a href="#" class="botao-amarelo">Perdi meu Pet</a>
+        <a href="#formulario" class="botao-amarelo">Perdi meu Pet</a>
       </div>
     </div>
   </section>
@@ -80,7 +79,7 @@
     </div>
   </section>
 
-  <section class="secao-cartazes">
+  <section class="secao-cartazes" id="cartazes">
     <div class="container">
       <div class="area-cartazes" id="lista-cartazes">
         
@@ -89,13 +88,13 @@
           <h2 class="titulo-cartaz">DESAPARECIDO</h2>
           <p class="recompensa">Recompensa: Muita Gratidão</p>
           
-          
-          <img src=""colocar foto aq alt="Cachorro Ozzy">
+          <img src="img/IMG_3783.jpg" alt="Cachorro Ozzy">
           
           <h3>Ozzy</h3>
           <p>Bairro Jaguaribe, PB</p>
           <p>Dachshund carinhoso e com uma manchinha branca no peito.</p>
-          <a href="#" class="botao-cartaz">Eu vi o Ozzy!</a>
+          
+          <a href="#formulario" class="botao-cartaz botao-visto" data-pet="Ozzy">Eu vi o Ozzy!</a>
         </div>
 
         <div class="cartaz">
@@ -103,15 +102,36 @@
           <h2 class="titulo-cartaz">PROCURA-SE</h2>
           <p class="recompensa">Dono chora todos os dias</p>
           
-          <img src=""colocar a foto aq alt="Gato Hidan">
+          <img src="img/IMG_1387.JPG" alt="Gato Hidan">
           
           <h3>Hidan</h3>
           <p>Centro, João Pessoa - PB</p>
           <p>Gato preto e medroso. Sem coleira.</p>
-          <a href="#" class="botao-cartaz">Eu vi o Hidan!</a>
+          
+          <a href="#formulario" class="botao-cartaz botao-visto" data-pet="Hidan">Eu vi o Hidan!</a>
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <section class="secao-formulario" id="formulario">
+    <div class="container">
+      <h2 class="text-center mb-4">Você tem informações?</h2>
+      
+      <form id="form-contato" class="formulario-contato">
+        
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome completo">
+
+        <label for="email">Seu E-mail:</label>
+        <input type="email" id="email" placeholder="nome@exemplo.com">
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" rows="4" placeholder="Qual pet você viu?"></textarea>
+
+        <button type="submit" class="botao-amarelo">Enviar Mensagem</button>
+      </form>
     </div>
   </section>
 
@@ -119,7 +139,7 @@
     <p>Adoção de Animais - Projeto de Front-end</p>
   </footer>
 
-  <script src=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script src="animaisperdidos.js"></script>
 </body>
