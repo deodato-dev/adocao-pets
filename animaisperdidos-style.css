@@ -181,3 +181,27 @@ footer {
 .formulario-contato button {
   width: 100%;
 }
+
+.footer-artesanal {
+  background-color: #38312B;
+  color: #E8E1D5;
+  border-top: 4px solid #D8AB4C;
+}
+
+.selo-footer {
+  background-color: #F3EFE7;
+  color: #38312B;
+  border: 2px solid #38312B;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  transform: rotate(1deg);
+}
+
+.social-footer {
+  color: #E8E1D5;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-footer:hover {
+  color: #D8AB4C;
+  transform: translateY(-2px);
+}
