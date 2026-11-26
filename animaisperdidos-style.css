@@ -1,7 +1,12 @@
 body {
   background-color: #f1ede5;
   color: #38312b;
-  font-family: Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.logo-texto {
+  font-family: 'Caveat';
+  font-size: 2rem;
 }
 
 .navbar-nav .nav-link {
@@ -24,6 +29,12 @@ body {
   transform: rotate(12deg);
 }
 
+.navbar-bloco:hover {
+  rotate: 0.8deg;
+  transition: all ease 0.25s;
+  margin-bottom: 20px;
+}
+
 .btn-criar {
   background-color: #7c8c61;
   color: white;
@@ -34,6 +45,7 @@ body {
 }
 
 .topo-pagina {
+  margin-top: 40px;
   background-color: #e8e4db;
   padding: 40px;
   text-align: center;
