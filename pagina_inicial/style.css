@@ -22,7 +22,11 @@ h1{
     font-size: 5rem;
 }
 
-p{
+.maquina{
+    font-family: var(--fonte-maquina);
+}
+
+.descricao{
     font-family: var(--fonte-maquina);
     font-size: 1.5rem;
 }
@@ -45,10 +49,6 @@ p{
     border-radius: 0px 100px 0px 100px;
 }
 
-.header{
-    font-family: var(--fonte-maquina);
-}
-
 .logo{
     font-family: var(--fonte-mao);
     font-size: 2rem;
@@ -57,6 +57,20 @@ p{
 
 .hero{
     padding-top: 75px;
+}
+
+.etiqueta-hero{
+    font-family: var(--fonte-maquina);
+    font-weight: 650;
+    font-size: 0.9rem;
+    background-color: var(--cor-mostarda);
+    border: 1px solid var(--cor-normal);
+    border-width: 2px 6px 6px 2px;
+    border-radius: var(--borda-torta);
+    padding: 0.4rem 0.8rem;
+    display: inline-block;
+    transform: rotate(-2deg);
+    margin-bottom: 15px;
 }
 
 .bts-hero{
@@ -70,7 +84,7 @@ p{
     background-color: var(--cor-destaque) !important;
     color: #f1ede5 !important;
     box-shadow: var(--sombra) var(--cor-normal);
-    border-width: 2px 6px 6px 2px;
+    border-width: 2px;
     border-radius: var(--borda-torta);
     font-family: var(--fonte-maquina);
     font-weight: 650;
@@ -90,7 +104,6 @@ p{
     font-size: 1.3rem;
     font-weight: 650;
     padding: 1rem 2rem;
-    align-items: inline-flex;
     transform: rotate(2deg);
     transition: all 0.4s;
 }
@@ -102,6 +115,49 @@ p{
 
 .polaroid{
     box-shadow: var(--sombra) var(--cor-normal);
+    background-color: #f1ede5;
+    border: 2px solid;
+    border-radius: var(--borda-torta);
+    padding: 20px 40px 80px;
+    max-width: 85%;
+    transform: rotate(4deg);
+    transition: all 0.7s;
+    margin-left: 40px;
+    position: relative;
+}
+
+.polaroidCaption{
+    margin-top: 20px;
+    font-family: var(--fonte-mao);
+    font-size: 2rem;
+}
+
+.polaroidImage{
+    border: 3px solid;
+    border-radius: var(--borda-torta);
+    transform: rotate(-2deg);
+}
+
+.polaroid:hover{
+    transform: rotate(0deg);
+}
+
+.polaroid::after{
+    content: "";
+    position: absolute;
+    width: 91px;
+    height: 23px;
+    background-color: rgba(233, 226, 215);
+    left: 50%;
+    top: -3%;
+    transform: translateX(-50%) rotate(-8deg);
+    border-radius: var(--borda-torta);
+    opacity: 97%;
+}
+
+.logo-texto {
+  font-family: var(--fonte-mao);
+  font-size: 2rem;
 }
 
 .navbar-nav .nav-link {
@@ -125,14 +181,47 @@ p{
 }
 
 .navbar-bloco {
+  margin-top: 20px;
+  margin-top: 20px;
   background-color: #E8E1D5;
-  border: 2px solid #38312B;
+  border: 2px solid var(--cor-normal);
   border-radius: var(--borda-torta);
   box-shadow: var(--sombra) var(--cor-normal);
   transform: rotate(-0.8deg);
-  transition: all 0.4s;
+  transition: all ease 0.25s;
+  margin-bottom: 20px;
 }
 
-.navbar-bloco:hover{
-    transform: rotate(0deg);
+.navbar-bloco:hover {
+  rotate: 0.8deg;
+  transition: all ease 0.25s;
+  margin-bottom: 20px;
+}
+
+.btn-criar {
+  background-color: #7C8C61 !important;
+  color: #F3EFE7;
+  border: 2px solid var(--cor-normal) !important;
+  border-radius: var(--borda-torta);
+  box-shadow: var(--sombra) var(--cor-normal);
+}
+
+.footer-artesanal {
+  background-color: var(--cor-normal);
+  color: #E8E1D5;
+  border-top: 4px solid #D8AB4C;
+}
+
+.selo-footer {
+  background-color: #F3EFE7;
+  color: #38312B;
+  border: 2px solid var(--cor-normal);
+  border-radius: var(--borda-torta);
+  transform: rotate(1deg);
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }

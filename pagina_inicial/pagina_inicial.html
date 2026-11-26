@@ -25,29 +25,25 @@
 
     <header>
         <nav class="navbar navbar-expand-md sticky-top p-3">
-
             <div class="container navbar-bloco px-4 py-2">
-                    <a class="navbar-brand d-flex align-items-center fw-bold" href="pagina_inicial.html">
-                        <img src="../assets/logo_pata.svg" height="40px" width="40px" alt="">
-                        <span class="logo">AdoteUmPet</span>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Habilitar Navegação">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
+                <a class="navbar-brand d-flex align-items-center text-tinta" href="../pagina_inicial/pagina_inicial.html">
+                        <img src="../assets/logo_pata.svg" alt="Logo AdoteUmPet" class="logo-img me-2">
+                        <span class="logo-texto">AdoteUmPet</span>
+                        </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label=""><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navMenu">
                     <ul class="nav navbar-nav ms-auto align-items-md-center gap-3">
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" href="pagina_inicial.html">Início</a>
+                            <a class="nav-link fw-bold maquina" href="../pagina_inicial/pagina_inicial.html">Início</a>
                         </li>
 
                         <li class="nav-item"> 
-                            <a class="nav-link fw-bold" href="../pagina_adocao/pagina_adocao.html">Adoção</a>
+                            <a class="nav-link fw-bold maquina" href="../pagina_adocao/pagina_adocao.html">Adoção</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" href="../pagina_perdidos/animaisperdidos.html">Perdidos</a>
+                            <a class="nav-link fw-bold maquina" href="../pagina_perdidos/animaisperdidos.html">Perdidos</a>
                         </li>
 
                         <li class="nav-item d-none d-md-block text-muted">
@@ -55,11 +51,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" href="/">Entrar</a>
+                            <a class="nav-link fw-bold maquina" href="../login.html">Entrar</a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="../pagina_cadastro/pcadastro.html" class="btn btn-criar fw-bold px-3 py-2">Criar conta</a>
+                            <a href="../pagina_cadastro_usuario/pcadastro.html" class="btn btn-criar fw-bold px-3 py-2 maquina">Criar conta</a>
                         </li>
 
                     </ul>
@@ -74,33 +70,51 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <h1> Amigos não se compram, se <span class="destaque">encontram.</span></h1>
-                <p>Nossa missão é juntar as peças soltas. De um lado, uma família cheia de amor. Do outro, um animal precisando de um lar.</p>
-                
-                <div class="btns-hero btn">
-                <a href="../pagina_adocao/pagina_adocao.html">Conhecer os pets.</a>
-                <a href="../pagina_perdidos/animaisperdidos.html">Achei/perdi um pet.</a> 
+                    <span class="etiqueta-hero">Mural de Adoção</span>
+                    <h1> Amigos não se compram, <br> se <span class="destaque">encontram.</span></h1>
+                <p class="descricao">Nossa missão é juntar as peças soltas. De um lado, uma família cheia de amor. Do outro, um animal precisando de um lar.</p>
+                <br>
+                <div class="bts-hero">
+                <a href="../pagina_adocao/pagina_adocao.html" class="btn-adocao btn">Conhecer os Pets</a>
+                <a href="../pagina_perdidos/animaisperdidos.html" class="btn-perdidos btn">Achei/Perdi um Pet</a> 
                 </div>
                 </div> 
                 
                 <div class="col-md-6">
-                     <img src="../assets/cachorros_pagina_inicial.png" class="img-fluid" alt="Cachorros brincando">
-                    <p>"Nosso primeiro dia juntos!"</p>
+                    <figure class="polaroid">
+                     <img src="../assets/cachorros_pagina_inicial.png" class="img-fluid polaroidImage" alt="Cachorros brincando">
+                    <figcaption class="text-center polaroidCaption">"Nosso primeiro dia juntos!"</figcaption>
+                    </figure>
                 </div>
                
             </div>
         </div>
         </section>
     </main>
+<br><br>
+    <footer class="footer-artesanal py-5 mt-auto">
+  <div class="container text-center">
 
-    <footer class="text-center">
-        <img src="../assets/logo_pata.svg" height="40px" width="40px" alt="">
+    <!-- Selo com a logo -->
+    <div class="selo-footer d-inline-flex align-items-center justify-content-center px-4 py-2 mb-4">
+      <img src="../assets/logo_pata.svg" class="logo-img me-2">
+      <span class="logo-texto">AdoteUmPet</span>
+    </div>
 
-        <span class="logo">
-            AdoteUmPet
-        </span>
+    <!-- Texto -->
+    <p class="fw-bold mx-auto opacity-75 mb-4 maquina" style="max-width: 440px;">
+      Feito com as próprias mãos (e muitas patinhas). Todos os direitos reservados.
+    </p>
 
-        <p>Feito com as próprias mãos (e muitas patinhas). Todos os direitos reservados. &copy; </p>
-    </footer>
+
+    <!-- Rabisco decorativo -->
+    <div class="pt-2 opacity-25">
+      <svg width="100" height="20" viewBox="0 0 100 20" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M0,10 Q20,20 40,5 T60,15 T80,5 T100,10" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+  </div>
+</footer>
 </body>
 </html>
