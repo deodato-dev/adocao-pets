@@ -17,7 +17,10 @@ body{
     background-color: #f1ede5;
 }
 
-
+h1{
+    font-family: var(--fonte-mao);
+    font-size: 5rem;
+}
 
 p{
     font-family: var(--fonte-maquina);
