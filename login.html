@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title> AdoteUmPet </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <header class="header">
+    <a class="logo">
+      <div class="logo_circular">
+      <img class="logo_img" src="https://raw.githubusercontent.com/deodato-dev/adocao-pets/assets/logo2.png">
+      </div>
+    
+      <div class="logo_texto">AdoteUmPet</div>
+    </a>
+
+    <nav class="menu" >
+      <ul class="menulista">
+        <li><a href="https://raw.githubusercontent.com/deodato-dev/adocao-pets/pagina-inicial/pagina-inicial.html" class="menulink">Início</a></li>
+        <li><a href="https://raw.githubusercontent.com/deodato-dev/adocao-pets/pagina-adocao/pagina_adocao" class="menulink">Adoção</a></li>
+        <li><a href="https://raw.githubusercontent.com/deodato-dev/adocao-pets/pagina-animais-perdidos/animaisperdidos.html" class="menulink">Perdidos</a></li>
+        <li><a class=menubarra>/</a></li>
+        <li><a class="menulink">Entrar</a></li>
+        <li><a href="https://raw.githubusercontent.com/deodato-dev/adocao-pets/pagina-cadastro/pcadastro" class="botaoentrar">Criar Conta</a></li>
+      </ul>
+    </nav>
+       
+  </header>
+
+
+  <body class="body">
+    <div class="login_card">        
+        <h2 class="login_titulo">Bem-vindo</h2>
+      
+        <p class="login_subtitulo">Mostre sua carteirinha de membro</p>
+          
+        <form action="https://raw.githubusercontent.com/deodato-dev/adocao-pets/pagina-adocao/pagina_adocao" method="post">
+                <fieldset class="fields">
+                
+                  <div class="campo">
+                    <label>E-mail:</label>
+                    <input type="email" name="email" placeholder="seu@email.com" required><br><br>
+                 
+                    <label>Senha secreta:</label>
+                    <input type="senha" name="senha" placeholder="******" required>
+                  </div>
+                               
+                <button type="submit" class="botao_form" value="Entrar">Entrar</button>   
+
+        </form>
+
+      <p class="login_cadastro"> Ainda não tem conta?
+          <br><br>
+          <a href="https://raw.githubusercontent.com/deodato-dev/adocao-pets/pagina-cadastro/pcadastro" class="login_cadastro_link">Faça seu cadastro aqui. </a> 
+           
+      </p>
+    </div>
+  
+  
+  </body>
+
+
+  <footer class="footer">
+    
+    <img class=logofooter src="https://raw.githubusercontent.com/deodato-dev/adocao-pets/assets/logo_pata.svg">
+    <br><br>
+    <p class="footer_texto"><small> © 2026 AdoteUmPet <br> Projeto Acadêmico de Desenvolvimento Front-End</small></p>
+  </footer>
+
+
+  <script src="login.js"></script>
+</html>
